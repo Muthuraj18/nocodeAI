@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Weather Data</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style3.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Insert Weather Data</h2>
+        <form action="/" method="post">
+            <label for="date">Date:</label>
+            <input type="date" name="date" required><br><br>
+
+            <label for="precipitation">precipitation:</label>
+            <input type="text" name="precipitation" required><br><br>
+
+            <label for="temp_max">Max Temperature:</label>
+            <input type="text" name="temp_max" required><br><br>
+
+            <label for="temp_min">Min Temperature:</label>
+            <input type="text" name="temp_min" required><br><br>
+
+            <label for="wind">Wind:</label>
+            <input type="text" name="wind" required><br><br>
+
+            <label for="weather">Weather:</label>
+            <input type="text" name="weather" required><br><br>
+
+            <input type="submit" value="Insert">
+        </form>
+    </div>
+</body>
+</html>
